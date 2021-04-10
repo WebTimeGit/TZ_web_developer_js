@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-family: roboto, sans-serif;
+    font-size: 10px;
+    background: #f1f1f1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.red_bg {
+    background: #CC5047;
+}
+
+.main_wrapper {
+    max-width: 1440px;
+    width: 100%;
+    height: 3000px;
+    margin: 0 auto;
+}
+
+.section {
+    position: relative;
+}
+
+.section_first {
+    padding: 60px 15px 228px;
+    z-index: 9;
+}
+
+.section_title {
+    color: #fff;
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.section_title h1 {
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.title_describe {
+    margin-top: 20px;
+    padding: 23px 57px;
+    border: 2px solid #413D5B;
+    border-radius: 12px;
+    font-size: 1.8em;
+}
+
+.section_title p {
+    margin-top: 20px;
+    font-size: 2.4em;
+    color: #DADADA;
+}
+
+.section_title p span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.clock_img {
+    width: 414px;
+    height: 414px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    overflow: hidden;
+}
+
+.clock_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.section_road {
+    position: relative;
+    background: #fff;
+}
+
+.road_block__wr1 {
+    width: 100%;
+    height: 417px;
+    position: absolute;
+    top: -245px;
+}
+
+.road_block1 {
+    width: 100%;
+    height: 417px;
+    background: url('../images/1.png') top right no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+
+.road_block_shadow1 {
+    position: absolute;
+    bottom: -20px;
+    z-index: 8;
+    width: 100%;
+    height: 417px;
+    background: url('../images/1-shadow.png') top right no-repeat;
+}
+
+.road_block_man1 {
+    position: absolute;
+    right: 15%;
+    z-index: 10;
+    width: 129px;
+    height: 300px;
+}
+
+.road_block_man1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.road_content {
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.road_card__wr {
+    margin-top: -100px;
+    max-width: 400px;
+    background: #CC5047;
+    border: 2px solid #CC5047;
+    border-radius: 12px;
+    padding-bottom: 25px;
+    line-height: 1.2;
+    position: relative;
+    z-index: 99;
+}
+
+.road_card {
+    font-size: 24px;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+}
+
+.road_card__wr p {
+    font-size: 16px;
+    color: #fff;
+    padding: 25px 20px;
+}
+
+.road_card.describe {
+    margin: auto 0 60px 130px;
+    max-width: 455px;
+    font-size: 20px;
+    border: 2px solid #CC5047;
+    position: relative;
+    z-index: 99;
+}
+
+.road_card.describe span {
+    font-weight: 500;
+}
+
+
+.road_block__wr2 {
+    width: 100%;
+    height: 417px;
+    position: absolute;
+    top: 180px;
+}
+
+.road_block2 {
+    width: 100%;
+    height: 417px;
+    background: url('../images/2.png') top left no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+
+.road_block_shadow2 {
+    position: absolute;
+    bottom: 00px;
+    z-index: 8;
+    width: 100%;
+    height: 417px;
+    background: url('../images/2-shadow.png') top left no-repeat;
+}
+
+.road_block_man2 {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -10%);
+    z-index: 10;
+    width: 129px;
+    height: 300px;
+}
+
+.section_clock {
+    z-index: 9;
+    padding: 60px 15px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.analog_clock {
+    max-width: 414px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.analog_clock img {
+    width: 100%;
+    height: 100%;
+}
+
+.analog_clock__arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    transform-origin: top center;
+}
+
+.clock_arrow-hh {
+    width: 25px;
+    height: 95px;
+    background: url('../images/clock_arrowHH.png');
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.clock_arrow-mm {
+    width: 19px;
+    height: 125px;
+    background: url('../images/clock_arrowMM.png');
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.analog_clock__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    background: url('../images/clock_active_center.png');
+    z-index: 9;
+}
+
+.digital_clock__wr {
+    max-width: 600px;
+    width: 100%;
+}
+
+.digital_clock {
+    max-width: 640px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.digital_clock__hh,
+.digital_clock__mm {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.digital_clock span {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: 14.4em;
+    color: #655D66;
+    padding: 5px 10px;
+    border: 15px solid #F59393;
+    border-radius: 30px;
+}
+
+.accWrapper {
+    width: 100%;
+    margin: 50px 0 0 0
+}
+
+.accordion_item {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 0 15px #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.accTitle {
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+
+.accTitle::after,
+.accTitle::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: white;
+    right: 30px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+
+.accTitle::after {
+    top: 8px;
+}
+
+.accTitle::before {
+    bottom: 8px;
+}
+
+.accTitle.active::after{
+    top: initial;
+    transform: rotate(45deg);
+}
+
+.accTitle.active::before {
+    bottom: initial;
+    transform: rotate(-45deg);
+}
+
+.accBody {
+    padding: 15px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    display: none;
+    transform-origin: 0 0;
+    transition: all 0.3s ease;
+}
+
+.accBody.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.clock_settings {
+    text-align: center;
+}
+
+.clock_settings__label {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input_form {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.input_form::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    color: #413D5B;
+    text-align: center;
+}
+
+.clock_settings__btn {
+    margin: 10px 0 0 0;
+    padding: 10px 15px;
+    border: 2px solid #F59393;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}

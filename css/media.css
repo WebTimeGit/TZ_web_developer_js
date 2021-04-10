@@ -1,0 +1,58 @@
+@media (max-width: 992px) {
+    .road_block_man2 {
+    display: none;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 7px;
+    }
+
+    .section_first {
+        padding: 60px 15px 300px;
+    }
+
+    .clock_img {
+        width: 180px;
+        height: 180px;
+        top: initial;
+        bottom: 100px;
+    }
+
+    .clock_img img {
+        right: 0;
+    }
+
+    .road_block__wr1 {
+        top: -50%;
+    }
+
+    .road_block_man1 {
+        top: initial;
+        bottom: 100px;
+        right: 5%;
+        width: 66px;
+        height: 180px;
+    }
+
+    .road_block__wr2 {
+        display: none;
+    }
+    .road_content {
+         flex-direction: column;
+    }
+    .road_card__wr {
+        margin: 0 auto;
+    }
+    .road_card.describe {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .digital_clock span {
+        font-size: 9em;
+        border: 10px solid #F59393;
+        border-radius: 20px;
+    }
+}

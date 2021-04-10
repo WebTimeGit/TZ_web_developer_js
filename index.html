@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TZ_Clock_js</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="main_wrapper">
+    <section class="section red_bg section_first">
+        <div class="section_title">
+            <h1>ВАШЕ НАГОРОДЖЕННЯ БУДЕ ПРИСКОРЕНО!</h1>
+            <div class="title_describe">
+                Зазвичай доставка грошових посилок займає від декількох тижнів до місяця, але Ви отримаєте Приз упродовж
+                24 годин завдяки преміум-доставці “День у день”.
+            </div>
+            <p>
+                Ви отримаєте <span>317 000,00 гривень</span> протягом однієї доби з моменту відправлення!*
+            </p>
+        </div>
+        <div class="clock_img">
+            <img src="images/clock_img.png" alt="image">
+        </div>
+    </section>
+
+    <section class="section section_road">
+        <div class="road_block__wr1">
+            <div class="road_block road_block1"></div>
+            <div class="road_block_shadow1"></div>
+            <div class="road_block_man1">
+                <img src="images/man1.png" class="road_block-img" alt="image">
+            </div>
+        </div>
+        <div class="road_content">
+            <div class="road_card__wr">
+                <div class="road_card">
+                    Єдине, що для цього потрібно, зазначити у документі МАРШРУТНИЙ ЛИСТ яке Кодове слово Ви назвете
+                    кур'єру при передачі Вам грошей, як підтвердження того, що саме Ви є адресатом та отримувачем призу.
+                </div>
+                <p>
+                    Ще ніхто з переможців не був удостоєний преміум-доставки Призу "День у день"! Тому для отримання 317
+                    000,00 гривень обов'язково заповніть МАРШРУТНИЙ ЛИСТ.
+                </p>
+            </div>
+
+            <div class="road_card describe">
+                Окрім того, зараз у Вас є унікальна можливість отримати <span>Додатковий приз!</span>*
+            </div>
+        </div>
+        <div class="road_block__wr2">
+            <div class="road_block road_block2"></div>
+            <div class="road_block_shadow2"></div>
+            <div class="road_block_man2">
+                <img src="images/man2.png" class="road_block-img" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section red_bg section_clock">
+        <div class="analog_clock">
+            <img src="images/clock_active.png" alt="clock">
+            <div class="analog_clock__arrow clock_arrow-hh"></div>
+            <div class="analog_clock__arrow clock_arrow-mm"></div>
+            <div class="analog_clock__center"></div>
+        </div>
+
+        <div class="digital_clock__wr">
+            <div class="digital_clock">
+                <div class="digital_clock__hh">
+                    <span>1</span>
+                    <span>8</span>
+                </div>
+                <div class="digital_clock__mm">
+                    <span>0</span>
+                    <span>0</span>
+                </div>
+            </div>
+
+            <div class="accWrapper">
+                <div class="accordion_item">
+                    <div class="accTitle">setting</div>
+                    <div class="accBody">
+                        <div class="clock_settings">
+                            <label for="input_hh" class="clock_settings__label">
+                                <input type="text" placeholder="Ввести годину" id="input_hh" class="input_form remove_placeholder">
+                            </label>
+
+                            <label for="input_mm" class="clock_settings__label">
+                                <input type="text" placeholder="Ввести хвелини" id="input_mm" class="input_form remove_placeholder">
+                            </label>
+                            <button type="button" class="clock_settings__btn">Зберегти</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
