@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let timeString = day.toLocaleTimeString('en-GB');
         let newTimeArr = timeString.split('')
+        console.log('текущее время ' + timeString.substr(0, 5))
         findAndRemoveAllItemArr(newTimeArr, ':')
 
         digital_clock__box.forEach((el, i) => {
@@ -177,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow_mm.style.transform = `rotate(${mm}deg)`
 
         let timeString = `${getHh}${getMm}`;
+        console.log('кастомные часы ' + timeString.match(/.{1,2}/g).join(":"))
         let newTimeArr = timeString.split('')
         digital_clock__box.forEach((el, i) => {
             el.textContent = newTimeArr[i]
@@ -200,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
     removeEventBtn.addEventListener('click', () => {
         removeEvent()
         getCustomTimeArr = []
+        console.log('STOP')
     })
 
 });

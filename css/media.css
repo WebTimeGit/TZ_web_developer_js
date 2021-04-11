@@ -53,10 +53,26 @@
     }
 }
 
+@media (max-width: 567px) {
+    .description_block {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tz_description {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 425px) {
     .digital_clock span {
         font-size: 9em;
         border: 10px solid #F59393;
         border-radius: 20px;
+    }
+
+    .footer {
+        font-size: 2.6em;
     }
 }
