@@ -78,6 +78,7 @@
                     <div class="analog_clock__arrow clock_arrow-mm" id="arrow_mm"></div>
                 </div>
             </div>
+            <div class="date"></div>
         </div>
 
         <div class="digital_clock__wr">
@@ -97,17 +98,23 @@
                     <div class="accTitle">setting</div>
                     <div class="accBody">
                         <div class="clock_settings">
-                            <label for="input_hh" class="clock_settings__label">
-                                <input type="text" placeholder="Ввести годину" id="input_hh"
-                                       class="input_form remove_placeholder">
-                            </label>
-
-                            <label for="input_mm" class="clock_settings__label">
-                                <input type="text" placeholder="Ввести хвилини" id="input_mm"
-                                       class="input_form remove_placeholder">
-                            </label>
+                            <div class="clock_settings__inputWr">
+                                <label class="clock_settings__label">
+                                    <input type="text" maxlength="1" placeholder="hh" name="time"
+                                           class="input_form remove_placeholder">
+                                    <input type="text" maxlength="1" placeholder="hh" name="time"
+                                           class="input_form remove_placeholder">
+                                </label>
+                                <label class="clock_settings__label">
+                                    <input type="text" maxlength="1" placeholder="mm" name="time"
+                                           class="input_form remove_placeholder">
+                                    <input type="text" maxlength="1" placeholder="mm" name="time"
+                                           class="input_form remove_placeholder">
+                                </label>
+                            </div>
                             <button type="button" class="clock_settings__btn" id="customTimeBtn">Зберегти</button>
                             <button type="button" class="clock_settings__btn" id="currentTimeBtn">Реальний час</button>
+                            <button type="button" class="clock_settings__btn" id="removeEvent">Стоп</button>
                         </div>
                     </div>
                 </div>

@@ -349,6 +349,8 @@ h6 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    transform: rotateZ(0deg);
+    transition: 1s ease;
 }
 
 .clock_arrow-hh::before {
@@ -358,9 +360,7 @@ h6 {
     height: 100%;
     border-radius: 30px;
     background: linear-gradient(0deg, transparent 50%, #776E79 50%);
-    transform: rotate(0deg);
     z-index: 77;
-
 }
 
 .clock_arrow-mm::before {
@@ -370,7 +370,6 @@ h6 {
     height: 100%;
     border-radius: 20px;
     background: linear-gradient(0deg, transparent 50%, #EF9291 50%);
-    transform: rotate(0deg);
     z-index: 99;
 }
 
@@ -494,17 +493,28 @@ h6 {
     text-align: center;
 }
 
+.clock_settings__inputWr {
+    display: flex;
+    justify-content: space-between;
+}
+
 .clock_settings__label {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
     margin: 10px 0;
 }
 
 .input_form {
-    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #413D5B;
+    width: 45%;
     height: 45px;
     padding: 0 10px;
     text-align: center;
+    border-radius: 5px;
+    border: 2px solid #F59393;
 }
 
 .input_form::placeholder {
