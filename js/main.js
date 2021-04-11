@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
     customTimeBtn.addEventListener('click', () => {
         removeEvent()
         getTimeArrFunction()
-        customTime = setInterval(customTimeFunction, 200)
+        customTime = setInterval(customTimeFunction, 1000)
     })
 
     // кнопка отменяет все setInterval
