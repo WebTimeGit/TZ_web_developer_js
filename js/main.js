@@ -45,6 +45,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // RESET PLACEHOLDER INPUT ON CLICK END
 
+    //SCROLL TO TOP
+    let toTopBtn = document.querySelector('#scroll_top')
+    if (toTopBtn) {
+        toTopBtn.addEventListener('click', scroll_top)
+
+        function fadeScroll() {
+            if (window.scrollY !== 0) {
+                toTopBtn.classList.add('visible')
+            } else {
+                toTopBtn.classList.remove('visible')
+            }
+        }
+
+        function scroll_top() {
+            document.body.scrollIntoView({block: "start", behavior: "smooth"})
+        }
+    }
+
+    window.onscroll = function () {
+        fadeScroll()
+    };
+
 
     // Start clock  script
     let arrow_hh = document.querySelector('#arrow_hh')
