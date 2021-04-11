@@ -66,22 +66,29 @@
     </section>
 
     <section class="section red_bg section_clock">
-        <div class="analog_clock">
-            <img src="images/clock_active.png" alt="clock">
-            <div class="analog_clock__arrow clock_arrow-hh"></div>
-            <div class="analog_clock__arrow clock_arrow-mm"></div>
-            <div class="analog_clock__center"></div>
+
+        <div class="analog_clock__wr">
+            <img src="images/clock_active.png" alt="image">
+            <div class="analog_clock">
+                <div class="arrow_hh__wr">
+                    <div class="analog_clock__arrow clock_arrow-hh" id="arrow_hh"></div>
+                </div>
+
+                <div class="arrow_mm__wr">
+                    <div class="analog_clock__arrow clock_arrow-mm" id="arrow_mm"></div>
+                </div>
+            </div>
         </div>
 
         <div class="digital_clock__wr">
             <div class="digital_clock">
-                <div class="digital_clock__hh">
-                    <span>1</span>
-                    <span>8</span>
+                <div class="digital_clock__hh" id="digital_clock__hh">
+                    <span class="digital_clock__box">1</span>
+                    <span class="digital_clock__box">8</span>
                 </div>
-                <div class="digital_clock__mm">
-                    <span>0</span>
-                    <span>0</span>
+                <div class="digital_clock__mm" id="digital_clock__mm">
+                    <span class="digital_clock__box">0</span>
+                    <span class="digital_clock__box">0</span>
                 </div>
             </div>
 
@@ -91,13 +98,16 @@
                     <div class="accBody">
                         <div class="clock_settings">
                             <label for="input_hh" class="clock_settings__label">
-                                <input type="text" placeholder="Ввести годину" id="input_hh" class="input_form remove_placeholder">
+                                <input type="text" placeholder="Ввести годину" id="input_hh"
+                                       class="input_form remove_placeholder">
                             </label>
 
                             <label for="input_mm" class="clock_settings__label">
-                                <input type="text" placeholder="Ввести хвелини" id="input_mm" class="input_form remove_placeholder">
+                                <input type="text" placeholder="Ввести хвилини" id="input_mm"
+                                       class="input_form remove_placeholder">
                             </label>
-                            <button type="button" class="clock_settings__btn">Зберегти</button>
+                            <button type="button" class="clock_settings__btn" id="customTimeBtn">Зберегти</button>
+                            <button type="button" class="clock_settings__btn" id="currentTimeBtn">Реальний час</button>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,9 @@
 @media (max-width: 992px) {
     .road_block_man2 {
-    display: none;
+        display: none;
     }
 }
+
 @media (max-width: 767px) {
     body {
         font-size: 7px;
@@ -38,12 +39,15 @@
     .road_block__wr2 {
         display: none;
     }
+
     .road_content {
-         flex-direction: column;
+        flex-direction: column;
     }
+
     .road_card__wr {
         margin: 0 auto;
     }
+
     .road_card.describe {
         margin: 20px auto;
     }
