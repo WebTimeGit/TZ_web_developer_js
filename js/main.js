@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Получаем массив с полей input времени + мини проверка
     const getTimeArrFunction = () => {
-        customTimeArr.forEach((el,i) => {
+        customTimeArr.forEach((el, i) => {
             if (el.value === '') {
                 el.value = 0
             } else if (i === 0 && el.value > 2) {
@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Валидация input ввода времени
     customTimeArr.forEach(el => {
-        el.addEventListener('keydown', function(event) {
+        el.addEventListener('keydown', function (event) {
             // Разрешаем: backspace, delete, tab и escape
-            if ( event.keyCode === 46 || event.keyCode === 8 || event.keyCode === 9 || event.keyCode === 27 ||
+            if (event.keyCode === 46 || event.keyCode === 8 || event.keyCode === 9 || event.keyCode === 27 ||
                 // Разрешаем: Ctrl+A
                 (event.keyCode === 65 && event.ctrlKey === true) ||
                 // Разрешаем: home, end, влево, вправо
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return
             } else {
                 // Запрещаем все, кроме цифр на основной клавиатуре, а так же Num-клавиатуре
-                if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
                     event.preventDefault()
                 }
             }
@@ -149,9 +149,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let getMm = day.getMinutes()
 
         let hh = getHh * 30
-        let mm = getMm * deg
+        let mm = (getHh * 360) + (getMm * deg)
 
-        arrow_hh.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`
+        arrow_hh.style.transform = `rotateZ(${(hh) + ((getMm * deg) / 12)}deg)`
         arrow_mm.style.transform = `rotateZ(${mm}deg)`
 
         let timeString = day.toLocaleTimeString('en-GB');
@@ -173,30 +173,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (getMm < 10) getMm = "0" + getMm
         if (customSec < 10) customSec = "0" + customSec
 
-        if (customSec === 60) {
-            console.log('+1 minute')
-            customMm += 1
-            customSec = 0
-            arrow_hh.style.transition = `1s ease`
-            arrow_mm.style.transition = `1s ease`
-        } else if (getMm === 60 ) {
-            console.log('+1 hour')
-            customHh += 1
-            customMm = 0
-            arrow_hh.style.transition = `initial`
-            arrow_mm.style.transition = `initial`
-        } else if (customHh >= 24) {
-            console.log('+1 hour')
-            customHh = 0
-            customMm = 0
-            customSec = 0
-            arrow_hh.style.transition = `initial`
-            arrow_mm.style.transition = `initial`
-        }
 
-        let hh = customHh * 30
-        let mm = customMm * deg
-        arrow_hh.style.transform = `rotate(${(hh) + (mm / 12)}deg)`
+        let hh = getHh * 30
+        let mm = (getHh * 360) + (+getMm * deg)
+
+        arrow_hh.style.transform = `rotate(${(hh) + ((customMm * deg) / 12)}deg)`
         arrow_mm.style.transform = `rotate(${mm}deg)`
 
         let timeString = `${getHh}${getMm}`;
@@ -205,6 +186,27 @@ document.addEventListener("DOMContentLoaded", function () {
         digital_clock__box.forEach((el, i) => {
             el.textContent = newTimeArr[i]
         })
+
+        if (customSec === 60) {
+            console.log('+1 minute')
+            customMm += 1
+            customSec = 0
+            arrow_hh.style.transition = `1s ease`
+            arrow_mm.style.transition = `1s ease`
+            console.log(customMm)
+            console.log(customSec)
+        } else if (getMm === 60) {
+            console.log('+1 hour')
+            customHh += 1
+            customMm = 0
+        } else if (customHh >= 24) {
+            console.log('+1 hour')
+            customHh = 0
+            customMm = 0
+            customSec = 0
+            arrow_hh.style.transition = `initial`
+            arrow_mm.style.transition = `initial`
+        }
     }
 
     // Кнопка активации текущего времени
@@ -216,14 +218,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Кнопка активации кастомного времени
     customTimeBtn.addEventListener('click', () => {
         removeEvent()
+        getCustomTimeArr = []
         getTimeArrFunction()
-        customTime = setInterval(customTimeFunction, 1000)
+        customTime = setInterval(customTimeFunction, 200)
     })
 
     // кнопка отменяет все setInterval
     removeEventBtn.addEventListener('click', () => {
         removeEvent()
         getCustomTimeArr = []
+        customSec = 0
         console.log('STOP')
     })
 

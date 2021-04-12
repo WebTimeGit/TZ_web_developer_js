@@ -136,6 +136,10 @@ h6 {
     max-width: 60%;
 }
 
+.author_description span {
+    color: #CC5047;
+}
+
 
 .section {
     position: relative;
@@ -585,7 +589,7 @@ h6 {
 }
 
 .footer a {
-    font-size: 1.4em;
+    font-size: 1.3em;
     display: block;
     color: transparent;
     margin: 0 15px;
