@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
             el.textContent = newTimeArr[i]
         })
     }
-
+    currentTimeFunction()
     // Функция получаем и устанавливаем кастомное время
     const customTimeFunction = () => {
         let getHh = customHh
