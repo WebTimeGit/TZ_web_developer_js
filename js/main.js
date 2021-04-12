@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let titleAcc = document.querySelectorAll('.accTitle')
     if (containerAcc && titleAcc) {
         for (let i = 0; i < titleAcc.length; i++) {
-            titleAcc[i].addEventListener('click', function (e) {
-
+            titleAcc[i].addEventListener('click', function () {
                 if (containerAcc.classList.contains('single')) {
                     titleAcc.forEach(accItem => {
                         accItem.classList.remove('active')
