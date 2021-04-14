@@ -190,8 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log('+1 minute')
             customMm += 1
             customSec = 0
-            arrow_hh.style.transition = `1s ease`
-            arrow_mm.style.transition = `1s ease`
+            // arrow_hh.style.transition = `1s ease`
+            // arrow_mm.style.transition = `1s ease`
             console.log(customMm)
             console.log(customSec)
         } else if (getMm === 60) {
@@ -203,8 +203,8 @@ document.addEventListener("DOMContentLoaded", function () {
             customHh = 0
             customMm = 0
             customSec = 0
-            arrow_hh.style.transition = `initial`
-            arrow_mm.style.transition = `initial`
+            // arrow_hh.style.transition = `initial`
+            // arrow_mm.style.transition = `initial`
         }
     }
 
@@ -231,6 +231,3 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 });
-
-
-
