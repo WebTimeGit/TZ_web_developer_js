@@ -66,7 +66,7 @@
 }
 
 @media (max-width: 425px) {
-    .digital_clock span {
+    .digital_clock .input_form {
         font-size: 9em;
         border: 10px solid #F59393;
         border-radius: 20px;
