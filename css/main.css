@@ -93,7 +93,7 @@ h6 {
 }
 
 .main_wrapper {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -214,7 +214,7 @@ h6 {
 .road_block1 {
     width: 100%;
     height: 417px;
-    background: url('../images/1.png') top right no-repeat;
+    background: url('../images/1_1.png') top right no-repeat;
     position: absolute;
     z-index: 10;
 }
@@ -225,7 +225,7 @@ h6 {
     z-index: 8;
     width: 100%;
     height: 417px;
-    background: url('../images/1-shadow.png') top right no-repeat;
+    background: url('../images/1_1-shadow.png') top right no-repeat;
 }
 
 .road_block_man1 {
@@ -299,7 +299,7 @@ h6 {
 .road_block2 {
     width: 100%;
     height: 417px;
-    background: url('../images/2.png') top left no-repeat;
+    background: url('../images/2_2.png') top left no-repeat;
     position: absolute;
     z-index: 10;
 }
@@ -310,7 +310,7 @@ h6 {
     z-index: 8;
     width: 100%;
     height: 417px;
-    background: url('../images/2-shadow.png') top left no-repeat;
+    background: url('../images/2_2-shadow.png') top left no-repeat;
 }
 
 .road_block_man2 {
@@ -441,139 +441,17 @@ h6 {
     margin: 0 10px;
 }
 
-.digital_clock span {
-    width: 47%;
+.digital_clock .input_form {
+    width: 93%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
-    font-size: 14.4em;
+    font-size: 12em;
     color: #655D66;
-    padding: 5px 10px;
+    text-align: center;
     border: 15px solid #F59393;
     border-radius: 30px;
-}
-
-.accWrapper {
-    width: 100%;
-    margin: 50px 0 0 0
-}
-
-.accordion_item {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    box-shadow: 0 0 15px #fff;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.accTitle {
-    padding: 10px 15px;
-    font-size: 22px;
-    font-weight: 900;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    letter-spacing: 2px;
-}
-
-
-.accTitle::after,
-.accTitle::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 20px;
-    background: white;
-    right: 30px;
-    transform: rotate(90deg);
-    transition: all 0.3s ease;
-}
-
-.accTitle::after {
-    top: 8px;
-}
-
-.accTitle::before {
-    bottom: 8px;
-}
-
-.accTitle.active::after{
-    top: initial;
-    transform: rotate(45deg);
-}
-
-.accTitle.active::before {
-    bottom: initial;
-    transform: rotate(-45deg);
-}
-
-.accBody {
-    padding: 15px;
-    height: auto;
-    opacity: 0;
-    visibility: hidden;
-    transform: scaleY(0);
-    display: none;
-    transform-origin: 0 0;
-    transition: all 0.3s ease;
-}
-
-.accBody.open {
-    opacity: 1;
-    visibility: visible;
-    transform: scaleY(1);
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.clock_settings {
-    text-align: center;
-}
-
-.clock_settings__inputWr {
-    display: flex;
-    justify-content: space-between;
-}
-
-.clock_settings__label {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-    margin: 10px 0;
-}
-
-.input_form {
-    font-size: 18px;
-    font-weight: 700;
-    color: #413D5B;
-    width: 45%;
-    height: 45px;
-    padding: 0 10px;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid #F59393;
-}
-
-.input_form::placeholder {
-    font-size: 18px;
-    font-weight: 700;
-    color: #413D5B;
-    text-align: center;
-}
-
-.clock_settings__btn {
-    margin: 10px 0 0 0;
-    padding: 10px 15px;
-    border: 2px solid #F59393;
-    border-radius: 5px;
-    background: #fff;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 .footer {

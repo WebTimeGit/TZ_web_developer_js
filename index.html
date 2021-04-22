@@ -117,43 +117,22 @@
         <div class="digital_clock__wr">
             <div class="digital_clock">
                 <div class="digital_clock__hh" id="digital_clock__hh">
-                    <span class="digital_clock__box">1</span>
-                    <span class="digital_clock__box">2</span>
+                    <label for="digital_clock__hh1">
+                        <input type="text" maxlength="1" name="time" id="digital_clock__hh1" class="digital_clock__box input_form" value="0">
+                    </label>
+                    <label for="digital_clock__hh2">
+                        <input type="text" maxlength="1" name="time" id="digital_clock__hh2" class="digital_clock__box input_form" value="0">
+                    </label>
                 </div>
                 <div class="digital_clock__mm" id="digital_clock__mm">
-                    <span class="digital_clock__box">0</span>
-                    <span class="digital_clock__box">0</span>
+                    <label for="digital_clock__mm1">
+                        <input type="text" maxlength="1" name="time" id="digital_clock__mm1" class="digital_clock__box input_form" value="0">
+                    </label>
+                    <label for="digital_clock__mm2">
+                        <input type="text" maxlength="1" name="time" id="digital_clock__mm2" class="digital_clock__box input_form" value="0">
+                    </label>
                 </div>
             </div>
-
-            <div class="accWrapper">
-                <div class="accordion_item">
-                    <div class="accTitle">setting</div>
-                    <div class="accBody">
-                        <div class="clock_settings">
-                            <div class="clock_settings__inputWr">
-                                <label class="clock_settings__label">
-                                    <input type="text" maxlength="1" placeholder="hh" name="time"
-                                           class="input_form remove_placeholder">
-                                    <input type="text" maxlength="1" placeholder="hh" name="time"
-                                           class="input_form remove_placeholder">
-                                </label>
-                                <label class="clock_settings__label">
-                                    <input type="text" maxlength="1" placeholder="mm" name="time"
-                                           class="input_form remove_placeholder">
-                                    <input type="text" maxlength="1" placeholder="mm" name="time"
-                                           class="input_form remove_placeholder">
-                                </label>
-                            </div>
-                            <button type="button" class="clock_settings__btn" id="customTimeBtn">Зберегти</button>
-                            <button type="button" class="clock_settings__btn" id="currentTimeBtn">Реальний час</button>
-                            <button type="button" class="clock_settings__btn" id="removeEvent">Стоп</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
     </section>
     <footer class="footer">
